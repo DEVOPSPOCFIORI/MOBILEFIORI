@@ -1,0 +1,15 @@
+_schema-version: 2.1
+ID: FIORI
+version: '<MAJOR>'
+parameters:
+  hcp-deployer-version: 1.1.0
+modules:
+  - name: MOBILEFIORI
+    type: html5
+    path: .
+    parameters:
+      version: '<MAJOR>-${timestamp}'
+    build-parameters:
+      builder: grunt
+      build-result: dist
+resources: []
